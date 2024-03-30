@@ -1,0 +1,124 @@
+/* Default styles */
+.hero {
+  width: 100%;
+  height: auto;
+  background-color: #292e36;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.hero-head {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.hero-head h1 {
+  font-size: 85px;
+  color: #dedede;
+}
+
+.hero-head h1 i {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.hero-head p {
+  color: #dedede;
+  font-size: 24px;
+}
+
+button {
+  width: 30%;
+  height: 61px;
+  color: #e1b168;
+  border: 1px solid #e1b168;
+  background-color: transparent;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #e1b168;
+  color: #dedede;
+  transition: all 0.3s ease-in;
+  transform: scale(1.1);
+}
+.hero-img {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: 60%;
+  height: auto;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 20px solid #40464f;
+}
+
+/* Media query for tablet screens */
+@media only screen and (max-width: 828px) {
+  .hero {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-head {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-head h1 {
+    font-size: 60px;
+  }
+
+  .hero-head h1 i {
+    font-size: 30px;
+  }
+
+  .hero-head p {
+    font-size: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .hero-img img {
+    height: auto;
+    width: 50%;
+    border-radius: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 20px solid #40464f;
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  button {
+    font-size: 16px;
+  }
+  .hero-img img {
+    height: auto;
+    width: 70%;
+    border-radius: 0;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border: 10px solid #40464f;
+  }
+}

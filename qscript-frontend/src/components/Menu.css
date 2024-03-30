@@ -1,0 +1,137 @@
+.menu {
+  width: 100%;
+  display: flex;
+  height: auto;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 30px;
+  background-color: #fff8f5;
+}
+.spl-item {
+  height: auto;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.spl-item h1,
+.menu-items h1 {
+  height: 41px;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #292e36;
+  margin: 15px 0px;
+}
+.spl-item p {
+  font-size: 20px;
+  color: #555555;
+  margin-top: 10px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.spl-item img {
+  margin-top: 30px;
+  height: auto;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.menu-items {
+  width: 67%;
+  height: 700px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+.menu-items::-webkit-scrollbar {
+  display: flex;
+  width: 8px;
+}
+
+.menu-items::-webkit-scrollbar-track {
+  display: none; /* Hide the scrollbar track */
+}
+
+.menu-items::-webkit-scrollbar-thumb {
+  background-color: #e1b168; /* Set the color of the scrollbar thumb */
+  border-radius: 15px; /* Set the border radius of the scrollbar thumb */
+}
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.each-item {
+  width: 98%;
+  height: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.each-item img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.item-name {
+  width: 60%;
+}
+
+/* Media query for tablet */
+@media only screen and (max-width: 1024px) {
+  .menu {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+
+  .spl-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .menu-items {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+/* Media query for iPhone Pro Max */
+@media only screen and (max-width: 440px) {
+  .menu {
+    padding: 10px;
+  }
+
+  .spl-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-items {
+    width: 100%;
+    height: 700px;
+  }
+
+  .each-item {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .each-item img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+  }
+}
