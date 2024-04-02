@@ -12,11 +12,11 @@ function HomePage() {
     return (
         <div className='Homepage'>
             <Navbar />
-            <Heero />
+            {/* <Heero />
             <AboutUs />
             <Menu/>
             <Contact/>
-            <Footer/>
+            <Footer/> */}
         </div>
     )
 }
